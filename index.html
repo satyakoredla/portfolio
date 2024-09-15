@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Profile</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-xxx" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-ukc9i9tvl33e3+8f+vks0ADWEFH1H6eFQjSrnM/y7xPuGJO8LdjF2pRWZmUwEIQExHyeAjsckFmVEMydEwK9Yg==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: rgb(1, 97, 126); font-family: 'Roboto', sans-serif; overflow-x: hidden;">
+
+<p class="starting_para">Welcome To Koredla Satyanarayana Portfolio</p>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="navigateTo('about-me')"><i class="fas fa-user"></i></a>
+                </li>
+                <li class="nav-item ms-3">
+                    <a class="nav-link" href="#" onclick="navigateTo('education')"><i class="fas fa-graduation-cap"></i></a>
+                </li>
+                <li class="nav-item ms-3">
+                    <a class="nav-link" href="#" onclick="navigateTo('skills')"><i class="fas fa-laptop-code"></i></a>
+                </li>
+                <li class="nav-item ms-3">
+                    <a class="nav-link" href="#" onclick="navigateTo('contact')"><i class="fas fa-envelope"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<script>
+        function navigateTo(sectionId) {
+          var section = document.getElementById(sectionId);
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
+</script>
+
+
+
+<section id="about-me" class="container mt-5">
+    <h1 class="text-center">About me</h1>
+    <p style="text-align: left;">I am Koredla Satyanarayana, a student with a passion for the IT field, and I am currently pursuing my degree in MSIT at IIIT Hyderabad. My interests lie in Data Science and Software Development. I am excited to learn and explore new technologies and trends in the industry. In my free time, I enjoy playing cricket, listening to music, and learning new languages. Feel free to connect with me on GitHub or follow me on Instagram.
+</section>
+
+
+<section id="education" class="container mt-5">
+    <h1 class="text-center text-light">Education</h1>
+    <div class="row flex-row">
+        <div class="col-md-6">
+            <div class="hover-element text-center" style="width: 250px;" data-details="College: IIIT Hyderabad, Branch: Master of Science in Information Technology">At Present </div>
+        </div>
+        <div class="col-md-6">
+            <div class="hover-element text-center" style="width: 250px;" data-details="CGPA: 7.84, College: Anil Neerukonda Institute of Technology and Science, Branch: Electronics and Communication Engineering, Viskhapatanam">B.Tech </div>
+        </div>
+    </div>
+    <div class="row flex-row mt-3">
+        <div class="col-md-6">
+            <div class="hover-element text-center" style="width: 250px;" data-details="GPA: 9.0, College: Sri Chaitanya Junior College, Viskhapatanam">12th</div>
+        </div>
+        <div class="col-md-6">
+            <div class="hover-element text-center" style="width: 250px;" data-details="GPA: 9.7, School: Dr KKR's Gowtham Concept School,Gudivada">10th</div>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="skills" class="container mt-5">
+    <h1 class="text-center text-light">Skills</h1>
+    <div class="row">
+        <div class="col-md-2">
+            <div class="logo-name text-center">PYTHON</div>
+        </div>
+        <div class="col-md-2">
+            <div class="logo-name text-center">HTML</div>
+        </div>
+        <div class="col-md-2">
+            <div class="logo-name text-center">CSS</div>
+        </div>
+        <div class="col-md-2">
+            <div class="logo-name text-center">SQL</div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="container mt-5">
+    <div class="centering">
+        <ul>
+            <li class="item">
+                <a href="https://www.github.com/satyakoredla" target="_blank">
+                    <i class="fa-brands fa-github icon"></i>
+                </a>
+            </li>
+            <li class="item">
+                <a href="https://www.linkedin.com/in/koredla-
+                satyanarayana-268a9a256/" target="_blank">
+                    <i class="fa-brands fa-linkedin icon"></i>
+                </a>
+            </li>
+            <li class="item">
+                <a href="https://www.instagram.com/satya_narayana03/" target="_blank">
+                    <i class="fa-brands fa-instagram icon"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <p style="color: rgb(0, 240, 148);">satyanarayanakoredla123@msitprogram.net</p>
+</section>
+
+</body>
+</html>
